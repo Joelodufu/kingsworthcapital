@@ -1349,7 +1349,7 @@
 
 				if ( livedemo ) {
 					var d = new Date();
-					d.setDate(d.getDate() + 42);
+					d.setDate(d.getDate() + 30);
 					settings[ $countDownItem.attr('data-type') ] = d;
 				} else {
 					settings[ $countDownItem.attr('data-type') ] = new Date( $countDownItem.attr( 'data-time' ) );
