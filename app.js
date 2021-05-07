@@ -22,7 +22,6 @@ var adminRouter = require('./routes/admin');
 var aboutRouter = require('./routes/about');
 var contactRouter = require('./routes/contact');
 
-require('dotenv').config()
 
 var app = express();
 //mongoose connection
