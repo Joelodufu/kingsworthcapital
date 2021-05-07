@@ -1,0 +1,174 @@
+@font-face {
+	font-family: 'poppins';
+	src: url("../../../fonts/Poppins-Regular.otf");
+	src: url("../../../fonts/Poppins-Medium.otf") ;
+	font-weight: normal;
+	font-style: normal;
+}
+
+main{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right top, rgb(159, 250, 250), rgb(255, 163, 232));
+
+}
+
+.main1 {
+    padding: 0;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right top, rgb(159, 250, 250), rgb(255, 163, 232));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+
+}
+.glass{
+    background: white;
+    backdrop-filter: blur(2rem);
+    min-height: 80vh;
+    width: 60vh;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border: white solid 1px;
+    border-radius: 2px;
+    z-index: 4;
+    display: flex;
+}
+.circle1, .circle2{
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.9), rgba(255, 255, 255, 0.1));
+}
+
+.circle1{
+
+    top: 10%;
+    background-color: rgb(0, 81, 255);
+    right: 20%;
+}
+
+.circle2{
+    background-color: rgb(255, 0, 221);
+    left: 5%; 
+    bottom: 5%;
+}
+
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.9), rgba(255, 255, 255, 0.1));
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 2rem;
+    font-family: poppins;
+}
+
+h1{
+    color:rgb(90, 113, 119);
+    font-size: 1rem;
+    opacity: 0.8;
+}
+h2, p{
+    color: rgb(90, 113, 119);
+    font-size: 1rem;
+    opacity: 0.8;
+}
+h3{
+    color: rgb(90, 113, 119);
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/*INVESTMENT*/
+.status{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.status input{
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.9), rgba(255, 255, 255,));
+    border: none;
+    width: 50%;
+    padding: 0;
+    border-radius: 2rem;
+}
+
+.investments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.cards{
+    display: flex;
+    border-radius: 1rem;
+    background: linear-gradient(to top right, rgba(255,255,255, 0.9), rgba(255,255,255,0.8));
+    margin: 1rem 0.5rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    position: relative;
+}
+
+.cards p{
+    font-size: .7rem;
+    color: rgb(0, 26, 255);
+}
+
+input[type=button]{
+    position: absolute;
+    border-radius: 2rem;
+    font-size: .5rem;
+    background: rgb(255, 0, 200);
+    color: white;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.progress{
+    background: linear-gradient(to right top, rgb(219, 219, 219), rgb(214, 214, 214));
+    width: 100%;
+    height: 25%;
+    position: relative;
+    border-radius:1rem ;
+    overflow: hidden;
+}
+.progress::after{
+   content: '';
+   width: 100%;
+   height: 100%;
+   background: rgb(0, 155, 8);
+   position: absolute;
+   right: 40%;
+   border-radius: 1rem;
+}
+.user{
+    background: white;
+    color: tomato;
+    width: 100%;
+}
+.wallet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+    margin-right: 0rem;
+}
+.walcont{
+    margin: 0rem auto
+}
+.percentage{
+    color: red;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
