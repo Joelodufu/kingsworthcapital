@@ -28,7 +28,7 @@ router.get('/', function(req, res, next) {
     } else {
         req.session.viewCount = 1
     }
-    res.render('default/index');
+    res.sendFile('index.html');
 });
 /*Get RoUtes */
 
